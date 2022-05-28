@@ -1,13 +1,10 @@
 #!/bin/bash
 
-echo "Enter a number"
-read num
-
-fact=1
-
-for((i=2;i<=num;i++))
-{
-  fact=$((fact * i))  #fact = fact * i
-}
-
-echo $fact
+F=1
+echo "Factorial"
+read -p "Enter the number for factorial" N
+for (( i=1; i<=N; i++ ))
+do
+F=$((F*i))
+done
+echo "Factorial of $N is = " $F
